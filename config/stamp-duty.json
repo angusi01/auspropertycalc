@@ -1,0 +1,14 @@
+{
+  "state": "NSW",
+  "thresholds": [
+    { "min": 0, "max": 14000, "base": 0, "rate": 1.25 },
+    { "min": 14000, "max": 32000, "base": 175, "rate": 1.5 },
+    { "min": 32000, "max": 85000, "base": 445, "rate": 1.75 },
+    { "min": 85000, "max": 319000, "base": 1372, "rate": 3.5 },
+    { "min": 319000, "max": 1064000, "base": 9562, "rate": 4.5 },
+    { "min": 1064000, "max": 3194000, "base": 43087, "rate": 5.5 },
+    { "min": 3194000, "max": null, "base": 160087, "rate": 7 }
+  ],
+  "premiumThreshold": 3000000,
+  "premiumRate": 7
+}
