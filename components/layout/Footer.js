@@ -4,11 +4,15 @@ import { calculatorSlugs, calculators } from '../../lib/calculators';
 export function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-grid">
+      <div className="footer-top">
+        <section>
+          <h2 className="footer-brand">AusPropertyCalc</h2>
+          <p>Free Australian property calculators for practical planning.</p>
+        </section>
         <section>
           <h2>Calculators</h2>
           {calculatorSlugs.map((slug) => (
-            <Link key={slug} href={`/${slug}`}>{calculators[slug].title}</Link>
+            <Link key={slug} href={`/${slug === 'lvr' ? 'lvr-lmi' : slug}`}>{calculators[slug].title.replace(' Calculator', '')}</Link>
           ))}
         </section>
         <section>
@@ -24,7 +28,7 @@ export function Footer() {
           <Link href="/disclaimer">Disclaimer</Link>
         </section>
       </div>
-      <div className="footer-bottom">© 2026 AusPropertyCalc. All rights reserved.</div>
+      <div className="footer-bottom">© 2026 AusPropertyCalc Australia</div>
     </footer>
   );
 }

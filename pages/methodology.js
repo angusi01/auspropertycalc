@@ -16,17 +16,21 @@ export default function Methodology() {
               <h2 className="text-xl font-semibold text-gray-800 mb-2">Stamp Duty</h2>
               <p className="text-gray-600">
                 This calculator estimates stamp duty (transfer duty) based on the property purchase price and selected Australian state or territory.
-                It applies the tiered progressive rate schedules and includes first-home buyer concessions and exemptions where applicable.
-                Rates reflect 2025–2026 state revenue office published schedules.
+                It applies tiered progressive rate schedules. NSW rates reflect Revenue NSW 2026/2027 transfer duty thresholds checked on 26 June 2026.
+                Where official tables use "$100 or part" increments, the calculator rounds the taxable bracket excess up to the next $100.
+                ACT estimates use the owner-occupier table for selected homes and the non-owner occupier table for investment property. NT estimates use the statutory under-$525,000 formula.
+                The first home buyer checkbox applies deterministic first-home duty rules where the form has enough information: NSW full home and vacant-land exemptions, VIC full exemption and taper up to $750,000, QLD established-home/new-home/vacant-land rules, SA new-home and vacant-land relief, current WA first home owner rates with region selection, and TAS established-home exemption through the current scheme end date.
+                It also shows current official grant and concession guidance links for each state or territory.
+                Other concessions depend on home type, contract date, occupancy, income, region, and eligibility details that must be confirmed with the relevant revenue office.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2">Borrowing Capacity</h2>
               <p className="text-gray-600">
-                This calculator estimates your maximum borrowable amount based on gross annual income, monthly expenses, existing debts, and loan term.
-                It applies a standard stress-test buffer of 3% above the entered interest rate as required by APRA guidelines.
-                Results are indicative only — actual lender assessments will vary.
+                This calculator estimates a simplified maximum borrowable amount from gross annual income, entered annual expenses, existing annual debt repayments, dependants, a 30-year term, and the configured assessment rate.
+                APRA guidance refers to a minimum 3 percentage point serviceability buffer above the loan interest rate, but actual lender policy and floor rates vary.
+                Results are indicative only and are not a lender assessment.
               </p>
             </section>
 
@@ -34,17 +38,17 @@ export default function Methodology() {
               <h2 className="text-xl font-semibold text-gray-800 mb-2">LVR / LMI</h2>
               <p className="text-gray-600">
                 The Loan-to-Value Ratio (LVR) calculator determines the percentage of the property value you are borrowing.
-                Where the LVR exceeds 80%, Lenders Mortgage Insurance (LMI) estimates are calculated using published insurer premium tables (Genworth/QBE indicative rates).
-                LMI can be capitalised into the loan or paid upfront.
+                Where the LVR exceeds 80%, the calculator flags that Lenders Mortgage Insurance may apply and displays a broad indicative cost band.
+                It does not quote live insurer premiums. Confirm LMI with your lender or mortgage insurer.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2">Capital Gains Tax (CGT)</h2>
               <p className="text-gray-600">
-                This calculator estimates the capital gain on an investment property sale based on purchase price, sale price, purchase costs, and holding period.
-                The 50% CGT discount applies to assets held for 12 months or more by individuals and trusts, in line with ATO published rules.
-                Rates are based on 2025–2026 ATO published marginal tax rate schedules.
+                This calculator estimates a capital gain from sale price, purchase price or cost base, and improvements or selling costs.
+                It applies the 50% CGT discount when selected for assets held for at least 12 months, consistent with ATO guidance for eligible individuals and trusts.
+                The displayed tax estimate uses the configured default marginal tax rate and does not replace personal tax advice.
               </p>
             </section>
 
@@ -60,9 +64,9 @@ export default function Methodology() {
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2">Depreciation</h2>
               <p className="text-gray-600">
-                This calculator estimates annual tax depreciation deductions for investment properties using the diminishing value method.
-                It applies ATO-published effective life schedules for Division 40 plant and equipment items and Division 43 capital works deductions.
-                Rates reflect 2025–2026 ATO published rulings.
+                This calculator estimates straight-line annual deductions using the entered cost and effective life.
+                For residential capital works, ATO guidance generally uses 2.5% per year over 40 years for eligible construction after 15 September 1987.
+                It does not prepare a full quantity surveyor depreciation schedule or Division 40 plant and equipment analysis.
               </p>
             </section>
 

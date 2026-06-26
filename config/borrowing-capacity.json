@@ -1,4 +1,7 @@
 {
+  "source": "APRA Prudential Practice Guide APG 223 serviceability buffer guidance, last checked 2026-06-26",
+  "sourceUrl": "https://www.apra.gov.au/housing-lending-standards-reinforcing-guidance-on-exceptions",
+  "serviceabilityBufferPercent": 3,
   "assessmentRate": 8.5,
   "termYears": 30,
   "incomeBufferPercent": 5
