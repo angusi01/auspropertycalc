@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Head from 'next/head';
 import { calculatorSlugs, calculators } from '../lib/calculators';
 
 function relatedCalculators(title) {
@@ -14,12 +13,7 @@ function SmallIcon() {
 
 export function CalculatorLayout({ title, description, children }) {
     const related = relatedCalculators(title);
-    return (<>
-      <Head>
-        <title>{title} | AusPropertyCalc</title>
-        <meta name="description" content={description} />
-      </Head>
-      <main className="calculator-page">
+    return (<main className="calculator-page">
       <section className="calculator-hero">
         <div>
           <p className="breadcrumb"><Link href="/">Home</Link> / Calculators / {title}</p>
@@ -48,6 +42,5 @@ export function CalculatorLayout({ title, description, children }) {
           </div>
         </article>
       </section>
-      </main>
-    </>);
+    </main>);
 }

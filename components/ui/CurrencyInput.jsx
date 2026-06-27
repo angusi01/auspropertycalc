@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 const formatter = new Intl.NumberFormat('en-AU', {
   style: 'currency',
   currency: 'AUD',
@@ -10,9 +12,16 @@ function displayValue(value) {
 }
 
 export function CurrencyInput({ value, onChange, label, error, placeholder }) {
+  const [text, setText] = useState(displayValue(value));
+
+  useEffect(() => {
+    setText(displayValue(value));
+  }, [value]);
+
   function handleChange(event) {
     const cleaned = event.target.value.replace(/\D/g, '');
     const numeric = cleaned === '' ? '' : Number(cleaned);
+    setText(displayValue(numeric));
     onChange(numeric);
   }
 
@@ -20,7 +29,7 @@ export function CurrencyInput({ value, onChange, label, error, placeholder }) {
     <label>{label}
       <input
         inputMode="numeric"
-        value={displayValue(value)}
+        value={text}
         placeholder={placeholder}
         onChange={handleChange}
         aria-invalid={Boolean(error)}

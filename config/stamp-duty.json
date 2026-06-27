@@ -1,10 +1,7 @@
 {
   "state": "NSW",
-  "source": "Revenue NSW transfer duty rates for 2025/26, current on 27 June 2026",
+  "source": "Revenue NSW transfer duty rates for 2026/2027, last checked 2026-06-26",
   "sourceUrl": "https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty/understanding-transfer-duty/calculate-transfer-duty",
-  "effectiveFrom": "2025-07-01",
-  "effectiveTo": "2026-06-30",
-  "roundUpToHundred": true,
   "firstHomeBuyerAssistance": {
     "homeExemptionMax": 800000,
     "homeConcessionMaxExclusive": 1000000,
@@ -24,7 +21,7 @@
       "grantUrl": "https://www.sro.vic.gov.au/buying-property/first-home-owner-grant"
     },
     "QLD": {
-      "summary": "For contracts from 9 June 2024, eligible first home buyers may pay no duty for established residences under $700,000, with the additional first-home concession phasing out under $800,000 while the home concession rate can still apply. Current Queensland guidance also provides full transfer duty relief for eligible first new homes and first home vacant land. The $30,000 First Home Owner Grant applies to eligible contracts signed through 30 June 2026; later contracts revert to the published base amount unless the scheme is extended.",
+      "summary": "For contracts from 9 June 2024, eligible first home buyers may pay no duty for established residences under $700,000, with the additional first-home concession phasing out under $800,000 while the home concession rate can still apply. Current Queensland guidance also provides full transfer duty relief for eligible first new homes and first home vacant land. This calculator applies those published duty rules for the selected property type. The Queensland First Home Owner Grant is $30,000 for eligible new homes under current rules.",
       "sourceUrl": "https://qro.qld.gov.au/duties/transfer-duty/concessions/homes/first-home/",
       "grantUrl": "https://qro.qld.gov.au/property-concessions-grants/first-home-grant/eligibility/"
     },
@@ -34,8 +31,8 @@
       "grantUrl": "https://www.revenuesa.sa.gov.au/first-home-owners-grant"
     },
     "WA": {
-      "summary": "RevenueWA currently applies the first home owner duty rate from 21 March 2025: no duty for eligible homes up to $500,000, concessional home rates up to $700,000 in Metropolitan and Peel regions or $750,000 outside those regions, no duty for eligible vacant land up to $350,000, and concessional vacant-land rates up to $450,000. Proposed higher duty thresholds remain subject to Parliament. Separately, the $10,000 First Home Owner Grant cap increased to $800,000 south of the 26th parallel for eligible transactions from 7 May 2026.",
-      "sourceUrl": "https://www.wa.gov.au/organisation/department-of-treasury-and-finance/transfer-duty-assessment",
+      "summary": "WA has introduced higher first home owner rate thresholds in the 2026-27 housing taxation package. Government statements say eligible first home buyers pay no duty for new or established homes up to $600,000, with concessions up to $800,000, and vacant-land relief up to $450,000 with reduced rates up to $550,000. Check RevenueWA because some changes are tied to legislation and commencement dates.",
+      "sourceUrl": "https://www.wa.gov.au/government/media-statements/Cook%20Labor%20Government/%24297-million-tax-package-to-deliver-for-WA-first-home-buyers-20260507",
       "grantUrl": "https://www.wa.gov.au/government/publications/about-the-first-home-owner-grant"
     },
     "TAS": {
@@ -44,25 +41,25 @@
       "grantUrl": "https://www.sro.tas.gov.au/first-home-owner/eligibility"
     },
     "ACT": {
-      "summary": "The calculator applies ACT non-commercial conveyance duty rates from 1 July 2025, using the owner-occupier table for selected homes and the non-owner occupier table for investment property. The ACT Home Buyer Concession Scheme can reduce or remove conveyance duty for eligible home or residential land purchases, but income and household tests need official confirmation.",
+      "summary": "The ACT Home Buyer Concession Scheme can reduce or remove conveyance duty for eligible home or residential land purchases. From 1 July 2025, the maximum concession is $35,238 and the property value limit is $1,020,000 or less.",
       "sourceUrl": "https://www.revenue.act.gov.au/home-buyer-assistance/home-buyer-concession-scheme/about-the-home-buyer-concession-scheme",
       "grantUrl": "https://www.revenue.act.gov.au/home-buyer-assistance"
     },
     "NT": {
-      "summary": "The calculator applies the Northern Territory land or property transfer stamp duty formula for purchasers who are not eligible for a concession. The HomeGrown Territory Grant offers $50,000 for eligible first-home buyers buying or building a new home, and NT also lists stamp duty exemption support for eligible house-and-land packages. Established-home grant settings depend on contract dates.",
+      "summary": "The HomeGrown Territory Grant offers $50,000 for eligible first-home buyers buying or building a new home, and NT also lists stamp duty exemption support for eligible house-and-land packages. Established-home grant settings depend on contract dates.",
       "sourceUrl": "https://nt.gov.au/property/home-owner-assistance/buy-build-new-home",
       "grantUrl": "https://nt.gov.au/property/home-owner-assistance"
     }
   },
   "thresholds": [
-    { "min": 0, "max": 17000, "base": 0, "rate": 1.25, "minimum": 20 },
-    { "min": 17000, "max": 37000, "base": 212, "rate": 1.5 },
-    { "min": 37000, "max": 99000, "base": 512, "rate": 1.75 },
-    { "min": 99000, "max": 372000, "base": 1597, "rate": 3.5 },
-    { "min": 372000, "max": 1240000, "base": 11152, "rate": 4.5 },
-    { "min": 1240000, "max": 3721000, "base": 50212, "rate": 5.5 },
-    { "min": 3721000, "max": null, "base": 186667, "rate": 7 }
+    { "min": 0, "max": 18000, "base": 0, "rate": 1.25, "minimum": 20 },
+    { "min": 18000, "max": 38000, "base": 225, "rate": 1.5 },
+    { "min": 38000, "max": 103000, "base": 525, "rate": 1.75 },
+    { "min": 103000, "max": 387000, "base": 1662, "rate": 3.5 },
+    { "min": 387000, "max": 1290000, "base": 11602, "rate": 4.5 },
+    { "min": 1290000, "max": 3870000, "base": 52237, "rate": 5.5 },
+    { "min": 3870000, "max": null, "base": 194137, "rate": 7 }
   ],
-  "premiumThreshold": 3721000,
+  "premiumThreshold": 3870000,
   "premiumRate": 7
 }

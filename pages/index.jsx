@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Head from 'next/head';
 import { EmailCapture } from '../components/EmailCapture';
 import { calculatorSlugs, calculators } from '../lib/calculators';
 
@@ -27,12 +26,7 @@ function Icon({ name }) {
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Australian Property Calculators | AusPropertyCalc</title>
-        <meta name="description" content="Free Australian stamp duty, borrowing capacity, LVR, rental yield, capital gains tax, and capital works calculators." />
-      </Head>
-      <main>
+    <main>
       <section className="property-hero">
         <div>
           <h1>Plan your next property move with clear Australian numbers.</h1>
@@ -48,7 +42,7 @@ export default function Home() {
             <small>Updated 2026</small>
           </div>
           <span><small>Purchase budget</small>$800,000</span>
-          <span><small>Estimated duty</small>$30,412</span>
+          <span><small>Estimated duty</small>$30,187</span>
           <span><small>Loan position</small>80% LVR</span>
         </div>
       </section>
@@ -86,7 +80,6 @@ export default function Home() {
         <EmailCapture />
         <small>No spam. Unsubscribe any time.</small>
       </section>
-      </main>
-    </>
+    </main>
   );
 }

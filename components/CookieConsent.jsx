@@ -3,10 +3,7 @@ import { useEffect, useState } from 'react';
 export function CookieConsent() {
     const [visible, setVisible] = useState(false);
     useEffect(() => {
-        const frame = window.requestAnimationFrame(() => {
-            setVisible(window.localStorage.getItem('analytics-consent') !== 'yes');
-        });
-        return () => window.cancelAnimationFrame(frame);
+        setVisible(window.localStorage.getItem('analytics-consent') !== 'yes');
     }, []);
     function accept() {
         window.localStorage.setItem('analytics-consent', 'yes');
