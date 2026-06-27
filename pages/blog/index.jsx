@@ -24,7 +24,7 @@ export default function BlogIndex({ posts }) {
       ) : (
         <section className="explanation-section">
           <h2>Guides coming soon</h2>
-          <p>We're writing clear, practical guides on Australian property. Check back soon.</p>
+          <p>We&apos;re writing clear, practical guides on Australian property. Check back soon.</p>
         </section>
       )}
     </main>
