@@ -1,4 +1,6 @@
 {
+  "source": "Australian Taxation Office CGT discount rules, current on 27 June 2026",
+  "sourceUrl": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount",
   "discountAfterMonths": 12,
   "defaultMarginalTaxRate": 0.39
 }
